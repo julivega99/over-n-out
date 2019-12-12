@@ -1,0 +1,125 @@
+
+.searchContainer
+{
+    margin-top: 30vh;   
+    text-align: center;
+    /* margin-bottom: 30vh; */
+}
+
+.searchBar 
+{
+    height: 20px;
+    width: 40vw;
+    border-radius: 15px;
+    padding: 1px 5px;
+}
+input, select, .searchButton
+{
+  border-color: #575757;
+  color: #e8e6e3;
+  background-color: #1b1818;
+}
+.Error{
+  color: #fa2525;
+}
+.loading{
+  width: 50px;
+}
+.searchButton
+{
+  margin: 1.5em;
+  border-style: solid;
+  border-width: 0.5px;
+  padding: 5px;
+}
+select{
+  padding: 3px;
+  border-style: solid;
+  border-width: 0.5px;
+}
+p
+{
+    margin-top: .5em;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}    
+/* GLOBAL STYLES */
+body {
+  background: #333;
+  /* padding-top: 5em; */
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.typewrite{
+  color: white;
+  text-decoration: none;
+}
+
+.disclaimer{
+  position: fixed;
+  float: left;
+  bottom: 1em;
+  margin-right: 50px;
+  transition: width 2s;
+}
+.discBtn{
+  border: solid whitesmoke 1px;
+  width: 1em;
+  height: 1em;
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  cursor: pointer;
+  z-index: 4;
+  text-align: center;
+  background-color: gray;
+  
+}
+
+a
+{
+  font-size: 1.5em ;
+  /* font-siz */
+}
+
+a:visited
+{
+  text-color: black;
+}
+
+#citeButton
+{
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 7px 12px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 9px;
+}
+
+#output_text{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: #1c1e1f;
+    color: #c5c1b9;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2a2c2e;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #323537;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #3d4043;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #2a2c2e #1c1e1f;
+}

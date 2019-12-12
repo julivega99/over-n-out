@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!--
+        NEEDS:
+            - Make it look user friendly
+            - Make text easy to read
+            - Functional disclaimer page (Don't expect this to summarize legal documents or make scientific papers understandable, etc etc)
+            - Implement database driven caching (Node.js + MongoDB)
+            - Generate more API keys and have them swap out once one is used up
+            - Keep the design minimalistic! Low key going for a Google vibe
+        
+        WANTS:
+            - English simplification feature
+            - Write custom summarizer using Google Text Analyzer API?
+            - Scale up to AWS hosted web service
+    -->
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Local jquery include, as including from a webpage has caused me problems in the past -->
+	<script src="jquery-3.4.1.js"></script>
+  <script src="script.js"></script>
+	<title>QuickaPedia</title>
+</head>
+
+<body>
+	<div class="searchContainer">
+		<h1>
+			<a href="" class="typewrite" data-period="2000" data-type='[ "QuickaPedia", "The Quick Encyclopedia", "QkPda"]'>
+				<span class="wrap"></span>
+      </a>
+    </h1>
+
+        <!-- Search bar that executes the search function if enter is pressed -->
+        <input type="text" class="searchBar" id="user_url_input" onKeyDown="if(event.keyCode==13) executeSearch()"placeholder="Enter Wikipedia URL Here...">
+        <br>
+
+        <!-- Search button -->
+        <button onclick="executeSearch()" class="searchButton" >Search</button>
+        Sentences: <select id = "user_length_input" class="user_length_input"></select>
+
+        <!-- Output container for output text (filled in from javascript) -->
+        <p id="output_text"></p>
+    </div>
+    <div class="discBtn" onclick="showDisc()">?</div>
+    <!-- <span title="Help" class="jsx-2319236743"></span> -->
+    <div class="disclaimer" id="disclaimer" style="display: none;">
+      We are not responsible for any citations or legal advice taken from QuickaPedia that turn out erronious or uninformative. Viewer discretion is advised.
+    </div>
+    <script src="api_call.js"></script>
+
+</body>
+</html>
