@@ -1,5 +1,5 @@
 # over-n-out
-**Contributors:
+**Contributors:**
 
 Yang Lowe
 
@@ -9,7 +9,7 @@ James Cameron
 
 Quickapedia is a summarizing app where you can insert a url, the number of sentences desired in the summary and it will return a summarized paragraph. 
 
-**To run:   
+**To run:**   
 
 npm install
 
