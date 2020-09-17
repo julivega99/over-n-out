@@ -10,6 +10,8 @@ Ubaid Rafique
 
 James Cameron
 
+Juliana Vega del Castillo
+
 **To run:**   
 
 npm install
